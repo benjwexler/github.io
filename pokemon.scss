@@ -1,0 +1,76 @@
+@import 'mixins';
+
+#boss {
+    @include flexContainer(800px, 100%, 2px solid green, column)
+}
+
+#header {
+    @include flexContainer(10%, 100%, 2px solid green, column)  
+}
+
+#namer {
+    @include flexContainer(100%, 30%, 2px solid green, column);
+    margin: auto;  
+    text-align: center;
+}
+
+#imageAndStatsContainer {
+    @include flexContainer(70%, 100%, 2px solid red, row);
+}
+
+#imageContainer {
+    @include flexContainer(100%, 50%, 2px solid red, column);
+}
+
+#image {
+    height: 100%;
+    width: 100%;
+}
+
+#statsContainer {
+    @include flexContainer(100%, 50%, 2px solid red, row);
+}
+
+#sliderParent{
+    @include flexContainer(20%, 30%, 2px solid red, row);
+    margin: auto;
+    text-align: center;
+}
+
+#prev {
+    @include flexContainer(100%, 50%, 2px solid green, column); 
+    font-size: 50px;
+    justify-content: center;
+    margin: auto;
+}
+
+#next{
+    @include flexContainer(100%, 50%, 2px solid green, column); 
+    font-size: 50px;
+    justify-content: center;
+
+}
+
+.statColumn {
+    @include flexContainer(100%, 25%, 2px solid green, column);   
+}
+
+#hp {
+    @include flexContainer(20%, 100%, 2px solid green, column);   
+}
+
+#attack {
+    @include flexContainer(20%, 100%, 2px solid green, column);    
+}
+
+#defense {
+    @include flexContainer(20%, 100%, 2px solid green, column);     
+}
+
+#arrayOfSkills {
+    @include flexContainer(20%, 100%, 2px solid green, column);     
+}
+
+.staticText {
+    @include flexContainer(20%, 100%, 2px solid green, column); 
+}

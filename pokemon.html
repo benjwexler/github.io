@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ben's Pokedex</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="pokemon.css" />
+</head>
+
+<body>
+    <div id="boss">
+        <div id="header">
+            <div id="namer">
+                Pokemon Name
+            </div>
+        </div>
+        <div id="imageAndStatsContainer">
+            <div id="imageContainer">
+                <img id="image">
+            </div>
+            <div id="statsContainer">
+                <div class="statColumn">
+                    <div class="staticText">
+                        HP
+                    </div>
+                    <div id="hp"></div>
+                </div>
+                <div class="statColumn">
+                    <div class="staticText">
+                        Attack
+                    </div>
+                    <div id="attack"></div>
+                </div>
+                <div class="statColumn">
+                    <div class="staticText">
+                        Defense
+                    </div>
+                    <div id="defense"></div>
+                </div>
+                <div class="statColumn">
+                    <div class="staticText">
+                        Skills
+                    </div>
+                    <div id="arrayOfSkills"></div>
+                </div>
+            </div>
+        </div>
+        <div id="sliderParent">
+            <button id="prev" onclick="slidePrev()">
+                &#8249
+            </button>
+            <button id="next" onclick="slideNext()">
+                &#8250
+            </button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="pokemon.js"></script>
+</body>
+
+</html>
